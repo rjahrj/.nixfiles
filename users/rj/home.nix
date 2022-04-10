@@ -35,6 +35,9 @@
     gpg = {
       enable = true;
     };
+    gh = {
+      enable = true;
+    }; 
   };
 
   services = {
