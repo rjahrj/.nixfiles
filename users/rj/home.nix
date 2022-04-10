@@ -24,6 +24,7 @@
     git-crypt
     gnupg
     pinentry_gtk2
+    herbstluftwm
   ];
 
   programs = {
@@ -41,6 +42,14 @@
   };
 
   services = {
+  #  xserver = {
+  #    windowManager = {
+  #      herbstluftwm = {
+  #        enable = true;
+  #        configFile = null;
+  #      };
+  #    };
+  #  };
     gpg-agent = {
       enable = true;
       pinentryFlavor = "gtk2";	 
