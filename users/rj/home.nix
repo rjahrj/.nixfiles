@@ -25,6 +25,7 @@
     gnupg
     pinentry_gtk2
     herbstluftwm
+    dmenu
   ];
 
   programs = {
