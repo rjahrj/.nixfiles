@@ -26,6 +26,7 @@
 
   home.packages = with pkgs; [
     herbstluftwm  
+    google-chrome
   ];
 
   programs = {
