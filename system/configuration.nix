@@ -33,7 +33,7 @@
     font = "Lat2-Terminus16";
     keyMap = "us";
   };
-
+  nixpkgs.config.allowUnfree = true;
   # Enable the X11 windowing system.
    services.xserver.enable = true;
    services.xserver = {
