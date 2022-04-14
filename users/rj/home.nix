@@ -31,6 +31,8 @@
   programs = {
     git = {
       enable = true;
+      userName = "rj";
+      userEmail = "rjahrj@gmail.coma";
     };
     gh = {
       enable = true;
