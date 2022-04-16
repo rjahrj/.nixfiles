@@ -33,6 +33,11 @@
       enable = true;
       userName = "rj";
       userEmail = "rjahrj@gmail.coma";
+      extraConfig = {
+        pull = {
+	  rebase = true;
+	};
+      };
     };
     fish = {
       enable = true;
