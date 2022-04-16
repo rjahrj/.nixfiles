@@ -3,7 +3,6 @@
 {
   imports = [
     ./private.nix
-#    ./herbst.nix
   ];
 
   # Home Manager needs a bit of information about you and the
@@ -28,6 +27,7 @@
     herbstluftwm  
     surf
     enpass
+    google-chrome
   ];
 
   programs = {
