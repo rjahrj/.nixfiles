@@ -1,9 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  imports = [
-    ./private.nix
-  ];
+  #imports = [];
 
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
@@ -35,9 +33,6 @@
       enable = true;
       userName = "rj";
       userEmail = "rjahrj@gmail.coma";
-    };
-    gh = {
-      enable = true;
     };
     fish = {
       enable = true;
