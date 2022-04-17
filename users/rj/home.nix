@@ -1,7 +1,9 @@
 { config, pkgs, ... }:
 
 {
-  #imports = [];
+  imports = [
+    ./herbst.nix
+  ];
 
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
@@ -44,16 +46,26 @@
     };
   };
 
-  xsession = {
-    enable = true;
-    windowManager = {
-      command = "${pkgs.herbstluftwm}/bin/herbstluftwm --locked";      
-      herbstluftwm = {
-        enable = false;
-      };
-    };
-  };
-  xdg.configFile."herbstluftwm/autostart".source = ~/.nixfiles/users/rj/autostart;
+#  xsession = {
+#    enable = true;
+#    windowManager = {
+#      command = "${pkgs.herbstluftwm}/bin/herbstluftwm --locked";      
+#      herbstluftwm = {
+#        enable = true;
+#	extraConfig = ''
+#	  herbsclient detect_monitors
+#	'';
+#        tags = [ "1" ];
+#	keybinds = {
+#	  Mod = "Mod4";
+#	};
+#	settings = {
+#	 window_border_active_color = "#7F00FF";
+#	};
+#      };
+#    };
+#  };
+#  #xdg.configFile."herbstluftwm/autostart".source = ~/.nixfiles/users/rj/autostart;
 
   home.sessionVariables = {
     EDITOR = "vim";
