@@ -10,14 +10,6 @@
   home.username = "rj";
   home.homeDirectory = "/home/rj";
 
-  # This value determines the Home Manager release that your
-  # configuration is compatible with. This helps avoid breakage
-  # when a new Home Manager release introduces backwards
-  # incompatible changes.
-  #
-  # You can update Home Manager without changing this value. See
-  # the Home Manager release notes for a list of state version
-  # changes in each release.
   home.stateVersion = "22.05";
 
   # Let Home Manager install and manage itself.
@@ -45,27 +37,6 @@
       enable = true;
     };
   };
-
-#  xsession = {
-#    enable = true;
-#    windowManager = {
-#      command = "${pkgs.herbstluftwm}/bin/herbstluftwm --locked";      
-#      herbstluftwm = {
-#        enable = true;
-#	extraConfig = ''
-#	  herbsclient detect_monitors
-#	'';
-#        tags = [ "1" ];
-#	keybinds = {
-#	  Mod = "Mod4";
-#	};
-#	settings = {
-#	 window_border_active_color = "#7F00FF";
-#	};
-#      };
-#    };
-#  };
-#  #xdg.configFile."herbstluftwm/autostart".source = ~/.nixfiles/users/rj/autostart;
 
   home.sessionVariables = {
     EDITOR = "vim";
